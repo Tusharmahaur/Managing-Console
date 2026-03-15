@@ -7,7 +7,7 @@ int main(){
     cout<<"Enter the size of element : ";
     cin>>size;
 
-    int *code = new int[size];
+    int *code = new int[size]; //using pointer approach 
     float *cost = new float[size];
     string *name = new string[size];
     
@@ -22,7 +22,7 @@ int main(){
     }
 
     cout<<"\n---------------------------------------------------------"<<endl;
-    cout.setf(ios::internal,ios::adjustfield);
+    cout.setf(ios::internal,ios::adjustfield);//this code for bit manipulation
     cout.width(15);
     cout<<"NAME";
 
@@ -36,7 +36,7 @@ int main(){
     cout<<"---------------------------------------------------------"<<endl;
 
     for(int i=0; i<size; i++){
-        cout.setf(ios::internal,ios::adjustfield);
+        cout.setf(ios::internal,ios::adjustfield);//setf(ios::1st argument,ios::2nd argument);
         cout.width(15);
         cout<<name[i];
         cout.setf(ios::internal,ios::adjustfield);
@@ -49,3 +49,4 @@ int main(){
     }
     return 0;
 }
+
